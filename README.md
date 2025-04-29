@@ -476,120 +476,33 @@ CrewAI is open-source and we welcome contributions. If you're looking to contrib
 - Add your feature or improvement.
 - Send a pull request.
 - We appreciate your input!
-
-### Installing Dependencies
-
-```bash
-uv lock
-uv sync
-```
-
-### Virtual Env
-
-```bash
-uv venv
-```
-
-### Pre-commit hooks
-
-```bash
-pre-commit install
-```
-
-### Running Tests
-
-```bash
-uv run pytest .
-```
-
-### Running static type checks
-
-```bash
-uvx mypy src
-```
-
-### Packaging
-
-```bash
-uv build
-```
-
-### Installing Locally
-
-```bash
-pip install dist/*.tar.gz
-```
-
-## Telemetry
-
-CrewAI uses anonymous telemetry to collect usage data with the main purpose of helping us improve the library by focusing our efforts on the most used features, integrations and tools.
-
-It's pivotal to understand that **NO data is collected** concerning prompts, task descriptions, agents' backstories or goals, usage of tools, API calls, responses, any data processed by the agents, or secrets and environment variables, with the exception of the conditions mentioned. When the `share_crew` feature is enabled, detailed data including task descriptions, agents' backstories or goals, and other specific attributes are collected to provide deeper insights while respecting user privacy. Users can disable telemetry by setting the environment variable OTEL_SDK_DISABLED to true.
-
-Data collected includes:
-
-- Version of CrewAI
-  - So we can understand how many users are using the latest version
-- Version of Python
-  - So we can decide on what versions to better support
-- General OS (e.g. number of CPUs, macOS/Windows/Linux)
-  - So we know what OS we should focus on and if we could build specific OS related features
-- Number of agents and tasks in a crew
-  - So we make sure we are testing internally with similar use cases and educate people on the best practices
-- Crew Process being used
-  - Understand where we should focus our efforts
-- If Agents are using memory or allowing delegation
-  - Understand if we improved the features or maybe even drop them
-- If Tasks are being executed in parallel or sequentially
-  - Understand if we should focus more on parallel execution
-- Language model being used
-  - Improved support on most used languages
-- Roles of agents in a crew
-  - Understand high level use cases so we can build better tools, integrations and examples about it
-- Tools names available
-  - Understand out of the publicly available tools, which ones are being used the most so we can improve them
-
-Users can opt-in to Further Telemetry, sharing the complete telemetry data by setting the `share_crew` attribute to `True` on their Crews. Enabling `share_crew` results in the collection of detailed crew and task execution data, including `goal`, `backstory`, `context`, and `output` of tasks. This enables a deeper insight into usage patterns while respecting the user's choice to share.
-
 ## License
 
 CrewAI is released under the [MIT License](https://github.com/crewAIInc/crewAI/blob/main/LICENSE).
 
-## Frequently Asked Questions (FAQ)
+## 🙌 Contributions & Feedback
 
-### Q: What is CrewAI?
-A: CrewAI is a cutting-edge framework for orchestrating role-playing, autonomous AI agents. It enables agents to work together seamlessly, tackling complex tasks through collaborative intelligence.
+I welcome contributions, suggestions, and feedback!  
+If you find any issues or want to improve this project, feel free to open a [GitHub issue](https://github.com/waheed444/CrewAI_Demo_Project/issues) or submit a pull request.
 
-### Q: How do I install CrewAI?
-A: You can install CrewAI using pip:
-```shell
-pip install crewai
-```
-For additional tools, use:
-```shell
-pip install 'crewai[tools]'
-```
+This repo is only for learning and exploring new things, feel free to fork it, explore, or give suggestions!
 
-### Q: Can I use CrewAI with local models?
-A: Yes, CrewAI supports various LLMs, including local models. You can configure your agents to use local models via tools like Ollama & LM Studio. Check the [LLM Connections documentation](https://docs.crewai.com/how-to/LLM-Connections/) for more details.
+**Star ⭐ the repo if it helps you!**
 
-### Q: What are the key features of CrewAI?
-A: Key features include role-based agent design, autonomous inter-agent delegation, flexible task management, process-driven execution, output saving as files, and compatibility with both open-source and proprietary models.
+---
 
-### Q: How does CrewAI compare to other AI orchestration tools?
-A: CrewAI is designed with production in mind, offering flexibility similar to Autogen's conversational agents and structured processes like ChatDev, but with more adaptability for real-world applications.
+## 🙌 Let's Connect
 
-### Q: Is CrewAI open-source?
-A: Yes, CrewAI is open-source and welcomes contributions from the community.
+<p align="left">
+  <a href="https://www.linkedin.com/in/waheed444/?originalSubdomain=pk)" target="_blank">
+    <img src="https://img.shields.io/badge/LinkedIn-blue?style=flat-square&logo=linkedin" alt="LinkedIn">
+  </a>
+  <a href="https://github.com/waheed444" target="_blank">
+    <img src="https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white" alt="GitHub">
+  </a>
+  <a href="waheedahmad5519@gmail.com" target="_blank">
+    <img src="https://img.shields.io/badge/Gmail-D14836?style=flat-square&logo=gmail&logoColor=white" alt="Gmail">
+  </a>
+</p>
 
-### Q: Does CrewAI collect any data?
-A: CrewAI uses anonymous telemetry to collect usage data for improvement purposes. No sensitive data (like prompts, task descriptions, or API calls) is collected. Users can opt-in to share more detailed data by setting `share_crew=True` on their Crews.
-
-### Q: Where can I find examples of CrewAI in action?
-A: You can find various real-life examples in the [CrewAI-examples repository](https://github.com/crewAIInc/crewAI-examples), including trip planners, stock analysis tools, and more.
-
-### Q: What is the difference between Crews and Flows?
-A: Crews and Flows serve different but complementary purposes in CrewAI. Crews are teams of AI agents working together to accomplish specific tasks through role-based collaboration, delivering accurate and predictable results. Flows, on the other hand, are event-driven workflows that can orchestrate both Crews and regular Python code, allowing you to build complex automation pipelines with secure state management and conditional execution paths.
-
-### Q: How can I contribute to CrewAI?
-A: Contributions are welcome! You can fork the repository, create a new branch for your feature, add your improvement, and send a pull request. Check the Contribution section in the README for more details.
+---
